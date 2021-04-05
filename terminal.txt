@@ -1,0 +1,17 @@
+# Câu lệnh mount ổ:
+
+# Tạo folder muốn để chứa ổ mount ra:
+mkdir data_mount
+
+# Sửa file nè và save
+sudo nano /etc/fstab
+
+# Thư mục muốn mount                 || Thư mục mount lên máy   ||Để nguyên
+dev/disk/by-uuid/C46890D66890C896       /home/datdt/data_mount        auto uid=1000,gid=1000,umask=022 0 0
+
+# Chạy lệnh mount lại:
+sudo mount -a
+
+# Lệnh unmount ổ: Đến thư mục chứa ổ mount ra rồi chạy câu lệnh dưới với tên của ổ
+sudo umount 68EE35E6EE35ACE6
+
