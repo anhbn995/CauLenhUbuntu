@@ -15,3 +15,7 @@ sudo mount -a
 # Lệnh unmount ổ: Đến thư mục chứa ổ mount ra rồi chạy câu lệnh dưới với tên của ổ
 sudo umount 68EE35E6EE35ACE6
 
+
+# Lệnh mount ổ mạng:
+sudo mount.cifs //192.168.4.4/Public /home/skm/SKM_OLD/public \-o rw,user=linh.gt,uid=skm,nounix,dir_mode=0777,file_mode=0777
+pass linh.gt là 123456789
