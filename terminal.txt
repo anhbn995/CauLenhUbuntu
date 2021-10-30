@@ -19,3 +19,8 @@ sudo umount 68EE35E6EE35ACE6
 # Lệnh mount ổ mạng:
 sudo mount.cifs //192.168.4.4/Public /home/skm/SKM_OLD/public \-o rw,user=linh.gt,uid=skm,nounix,dir_mode=0777,file_mode=0777
 pass linh.gt là 123456789
+
+
+# Lệnh mount máy khác của Geoai máy mosaic dược ảnh
+sudo mount.cifs //192.168.4.104/eofactorytest /home/skm/SKM_OLD/geoai_data_test \-o rw,user=thaibv,uid=1000,nounix,dir_mode=0777,file_mode=0777
+pass: ?
